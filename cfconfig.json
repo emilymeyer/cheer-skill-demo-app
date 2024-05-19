@@ -1,0 +1,41 @@
+{
+    "adminPassword": "commandbox",
+    "cacheDefaultObject": "coldbox",
+    "debuggingEnabled": true,
+    "debuggingReportExecutionTimes": false,
+    "disableInternalCFJavaComponents": false,
+    "requestTimeoutEnabled": true,
+    "requestTimeout": "0,0,5,0",
+    "robustExceptionEnabled": true,
+    "caches": {
+        "coldbox": {
+            "storage": "true",
+            "type": "RAM",
+            "custom": {
+                "timeToIdleSeconds": "1800",
+                "timeToLiveSeconds": "3600"
+            },
+            "class": "lucee.runtime.cache.ram.RamCache",
+            "readOnly": "false"
+        }
+    },
+    "datasources": {
+        "cheer_skills": {
+            "bundleName": "com.mysql.cj",
+            "bundleVersion": "8.0.28",
+            "class": "com.mysql.jdbc.Driver",
+            "connectionLimit": "100",
+            "connectionTimeout": "1",
+            "custom": "useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC&useLegacyDatetimeCode=true&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true",
+            "database": "cheer_skills",
+            "dbdriver": "mysql",
+            "dsn": "jdbc:mysql://{host}:{port}/{database}",
+            "host": "127.0.0.1",
+            "password": "rootytooty",
+            "port": "3306",
+            "username": "root",
+            "storage": "false"
+        }
+    },
+    "whitespaceManagement": "white-space-pref"
+}

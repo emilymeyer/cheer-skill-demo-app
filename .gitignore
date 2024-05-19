@@ -1,0 +1,5 @@
+docker-compose.yml
+.mysql
+.DS_Store
+ui_tests/reports
+ui_tests/node_modules

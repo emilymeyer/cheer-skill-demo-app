@@ -1,0 +1,8 @@
+{
+    "profile":"development",
+    "web":{
+        "http":{
+            "port":"8080"
+        }
+    }
+}
