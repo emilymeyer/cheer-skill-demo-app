@@ -3,14 +3,14 @@ CREATE DATABASE IF NOT EXISTS cheer_skills;
 USE cheer_skills;
 
 CREATE TABLE IF NOT EXISTS athlete (
-    id         int not null,
+    id         int not null AUTO_INCREMENT,
     first_name varchar(20),
     last_name  varchar(20),
     PRIMARY KEY   (id)
 );
 
 CREATE TABLE IF NOT EXISTS skill (
-    id            int not null,
+    id            int not null ,
     skill_name    varchar(50),
     skill_level   int,
     skill_type_id int,

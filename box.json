@@ -1,0 +1,8 @@
+{
+    "dependencies":{
+        "wirebox":"^7.3.0+16"
+    },
+    "installPaths":{
+        "wirebox":"wirebox/"
+    }
+}
