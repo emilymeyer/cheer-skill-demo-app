@@ -23,7 +23,7 @@
     </head>
     <cfoutput>
     <div class="container-fluid">
-    <form action="../cfc/athlete.cfc?method=save" method="POST">
+    <form action="../data/athlete.cfc?method=save" method="POST">
         <div class="form-group">
             <label for="firstName">First name</label>
             <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Athlete first name" value="#athleteInfo.first_name#">
@@ -34,7 +34,7 @@
         </div>
         <div class="form-group">
             <label for="standingTumbling">Standing Tumbling</label>
-            <select multiple class="form-control" id="standingTumbling">
+            <select multiple class="form-control" id="standingTumbling" name="standingTumbling">
                 <cfloop array="#tumblingSkills#" item="skill">
                     <option value="#skill.id#">Level #skill.level# - #skill.name#</option>
                 </cfloop>
@@ -42,7 +42,7 @@
         </div>
         <div class="form-group">
             <label for="flyerSkills">Flyer Skills</label>
-            <select multiple class="form-control" id="flyerSkills">
+            <select multiple class="form-control" id="flyerSkills" name="flyerSkills">
                 <cfloop array="#flyerSkills#" item="skill">
                     <option value="#skill.id#">Level #skill.level# - #skill.name#</option>
                 </cfloop>
@@ -50,7 +50,7 @@
         </div>
         <div class="form-group">
             <label for="baseSkills">Base Skills</label>
-            <select multiple class="form-control" id="baseSkills">
+            <select multiple class="form-control" id="baseSkills" name="baseSkills">
                 <cfloop array="#baseSkills#" item="skill">
                     <option value="#skill.id#">Level #skill.level# - #skill.name#</option>
                 </cfloop>
