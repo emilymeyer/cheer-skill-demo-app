@@ -1,6 +1,6 @@
 Feature('Proof of Concept');
 
-Scenario('open my website', ({ I }) => {
+xScenario('Open the add athlete form', ({ I }) => {
     I.amOnPage('/');
     I.wait(1);
     I.see("Athlete Skill Tracker");

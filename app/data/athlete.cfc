@@ -3,8 +3,7 @@ component displayName="Athete" {
     property string lastName;
 
     remote void function save(numeric id, string firstName, string lastName, standingTumbling, flyerSkills, baseSkills){
-        writeDump(arguments);
-        abort();
+    
         queryExecute("
             INSERT INTO athlete (first_name, last_name)
             VALUES (?, ?);
