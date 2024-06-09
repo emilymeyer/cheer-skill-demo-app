@@ -1,24 +1,43 @@
 Feature('Add athlete form');
 
+const { I, athleteForm, tumbling, flyer } = inject();
+
 Scenario('Add athlete with no skills', ({ I }) => {
     I.amOnPage('/athletes/add.cfm');
-    I.wait(1);
+    I.wait(3);
 
-    I.fillField("#firstName", "Eric");
-    I.fillField("#lastName", "Rockman"); //IYKYK
-    I.click("#add-athlete-button");
-    I.waitForVisible("#add-athlete-form");
+    athleteForm.fillAthleteName("Eric", "Rockman");
+    athleteForm.submit();
+
+    //Now we can add assertions
 });
 
 Scenario('Add flyer with level 1 tumbling', ({ I }) => {
+    var testTumblingSkills = [
+        tumbling.forwardRoll,
+        tumbling.backwardRoll,
+        tumbling.cartwheel,
+        tumbling.roundOff,
+        tumbling.frontWalkover,
+        tumbling.backWalkover
+    ];
+
+    var testFlyerSkills = [
+        flyer.heelStretch,
+        flyer.lib,
+        flyer.extensionLib
+    ];
+
     I.amOnPage('/athletes/add.cfm');
+    I.wait(3);
+
+    athleteForm.fillAthleteName("Emily", "Meyer");
     I.wait(1);
+    athleteForm.enterStandingTumbling(testTumblingSkills);
+    I.wait(1);
+    athleteForm.enterFlyerSkills(testFlyerSkills);
+    I.wait(2);
+    athleteForm.submit();
 
-    I.fillField("#firstName", "Emily");
-    I.fillField("#lastName", "Meyer");
-    I.selectOption("#standingTumbling", ["1", "2", "3", "4", "5", "6"]);
-    I.selectOption("#flyerSkills", ["14", "16", "21"]);
-
-    I.click("#add-athlete-button");
-    I.waitForVisible("#add-athlete-form");
+    //ASSERTION TIME WOOOOOOO
 });

@@ -10,7 +10,10 @@ exports.config = {
         }
     },
     include: {
-        I: './steps_file.js'
+        I: './steps_file.js',
+        athleteForm: './pages/AthleteForm.js',
+        flyer: "./fragments/Flyer.js",
+        tumbling: "./fragments/Tumbling.js"
     },
     name: 'ui_tests'
 }
