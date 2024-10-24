@@ -1,6 +1,6 @@
 Feature('Add athlete form');
 
-const { I, athleteForm, tumbling, flyer } = inject();
+const { I, athleteForm } = inject();
 
 Scenario('Add beginner athlete', ({ I }) => {
     I.amOnPage('/athletes/add.cfm');
@@ -13,24 +13,19 @@ Scenario('Add beginner athlete', ({ I }) => {
 });
 
 Scenario('Add flyer with level 1 tumbling', ({ I }) => {
-    var testTumblingSkills = [
-        tumbling.forwardRoll,
-        tumbling.backwardRoll,
-        tumbling.cartwheel,
-        tumbling.roundOff
-    ];
-
-    var testFlyerSkills = [
-        flyer.heelStretch,
-        flyer.lib,
-        flyer.extensionLib
-    ];
-
     I.amOnPage('/athletes/add.cfm');
+    I.wait(5);
+
+    I.fillField("#firstName", "Emily");
+    I.fillField("#lastName", "Meyer");
     I.wait(3);
 
-    athleteForm.fillAthleteName("Emily", "Meyer");
-    athleteForm.enterStandingTumbling(testTumblingSkills);
-    athleteForm.enterFlyerSkills(testFlyerSkills);
-    athleteForm.submit();
+    I.selectOption("#standingTumbling", ["1", "2", "3", "4"]);
+    I.selectOption("#flyerSkills", ["14", "16", "21"]);
+    I.wait(3);
+
+    I.click("#add-athlete-button");
+    I.waitForVisible("#add-athlete-form");
+
+    I.say("Assert('Refactoring is fun)");
 });

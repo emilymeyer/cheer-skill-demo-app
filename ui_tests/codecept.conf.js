@@ -10,7 +10,8 @@ exports.config = {
         }
     },
     include: {
-        I: './steps_file.js'
+        I: './steps_file.js',
+        athleteForm: './pages/AthleteForm.js'
     },
     name: 'ui_tests'
 }
