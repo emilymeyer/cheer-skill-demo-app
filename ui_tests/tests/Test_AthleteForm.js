@@ -6,8 +6,11 @@ Scenario('Add beginner athlete', ({ I }) => {
     I.amOnPage('/athletes/add.cfm');
     I.wait(3);
 
-    athleteForm.fillAthleteName("Eric", "Rockman");
-    athleteForm.submit();
+    I.fillField("#firstName", "Emily");
+    I.fillField("#lastName", "Meyer");
+
+    I.click("#add-athlete-button");
+    I.waitForVisible("#add-athlete-form");
 
     //Now we can add assertions
 });
