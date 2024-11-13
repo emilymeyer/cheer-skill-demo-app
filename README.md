@@ -10,4 +10,4 @@ This is the first pass at automating the add athlete form The code is spaghetti-
   
 * `ui_tests/tests/Test_AthleteForm3.js` Functions `fillAthleteName(first, last)` and `submit()` added to `ui_tests/pages/AthleteForm,js`. The functions replace repeated code in both test cases.
 
-* `ui_tests/tests/Test_AthleteForm4.js` Hard-coded skill id's are removed from the test and added to the Flyer (`ui_tests/fragments/Flyer.js`) and Tumbling (`ui_tests/fragments/Tumbling.js`) page fragments as appropriate. The 
+* `ui_tests/tests/Test_AthleteForm4.js` Hard-coded skill id's are removed from the test and added to the Flyer (`ui_tests/fragments/Flyer.js`) and Tumbling (`ui_tests/fragments/Tumbling.js`) page fragments as appropriate. In AthleteForm.js, there are new variables for the standing tumbling and flyer skills multi-select fields. The test uses the skill names and the new multi-select field variables.
