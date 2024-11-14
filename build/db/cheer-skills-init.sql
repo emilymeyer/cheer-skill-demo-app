@@ -73,12 +73,12 @@ INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (14, 'heel
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (15, 'scale', 1, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (16, 'lib', 1, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (17, 'bow and arrow', 1, 2);
-INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (18, 'scropion', 1, 2);
+INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (18, 'scorpion', 1, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (19, 'extension heel stretch', 3, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (20, 'extension scale', 3, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (21, 'extension lib', 3, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (22, 'extension bow and arrow', 3, 2);
-INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (23, 'extension scropion', 3, 2);
+INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (23, 'extension scorpion', 3, 2);
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (24, 'body position', 1, 3);
 
 INSERT INTO skill (id, skill_name, skill_level, skill_type_id) VALUES (25, 'extension body position', 3, 3);
