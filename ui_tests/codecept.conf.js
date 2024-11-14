@@ -11,7 +11,9 @@ exports.config = {
     },
     include: {
         I: './steps_file.js',
-        athleteForm: './pages/AthleteForm.js'
+        athleteForm: './pages/AthleteForm.js',
+        tumbling: './fragments/Tumbling.js',
+        flyer: './fragments/Flyer.js'
     },
     name: 'ui_tests'
 }
