@@ -3,10 +3,17 @@ A demo app to accompany my presentation "Introducing the Page Object Pattern in 
 
 # Getting Started
 ## I want to run the tests
-Alrighty. This app runs in a docker container using CommandBox. So make sure you have those installed.
+Alrighty. This app runs in a docker container using CommandBox. So make sure you have those installed. Then
 
-### 
+* Clone the repo: git@github.com:emilymeyer/cheer-skill-demo-app.git
+* Navigate to the app
+* Run setup.sh
+
 ## That's nice, I just want to look at the code:
+
+* You can find all of the test case code in `ui_tests/tests`
+* The page object will be in `ui_tests/pages`
+* The Tumbling and Flyer fragments will be in `ui_tests/fragments`
 
 ## Running the Tests
 * One file
