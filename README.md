@@ -2,8 +2,11 @@
 A demo app to accompany my presentation "Introducing the Page Object Pattern in CodeCeptJS"
 
 # Getting Started
-* ColdBox
-* CodeCeptJS
+## I want to run the tests
+Alrighty. This app runs in a docker container using CommandBox. So make sure you have those installed.
+
+### 
+## That's nice, I just want to look at the code:
 
 ## Running the Tests
 * One file
