@@ -16,8 +16,14 @@ Alrighty. This app runs in a docker container using CommandBox. So make sure you
 * The Tumbling and Flyer fragments will be in `ui_tests/fragments`
 
 ## Running the Tests
-* One file
-* Folder
+### Run One File:
+`npx codeceptjs run tests/${file name goes here}`
+
+### Run a folder:
+`npx codeceptjs run tests`
+
+### Run everything:
+`npx codeceptjs run`
 
 # Page Objects
 
